@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS */
+        
+        /* Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Hero Section Styling */
+        .hero {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.8;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3); /* Dark overlay */
+        }
+
+        .hero h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Book Genres Section Styling */
+        .book-genres {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-color: #ffffff;
+        }
+
+        .book-genres h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #4e4e4e;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            color: #777;
+            line-height: 1.5;
+        }
+
+        /* Footer Section Styling */
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #f8f9fa;
+            text-decoration: underline;
+        }
+
+        .footer p {
+            margin-top: 20px;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<div class="hero">
+    <img src="https://newint.org/sites/default/files/d7/features/2016/09/20/01.10.2016-world-fiction-special-590.jpg" class="img-fluid w-100" alt="Bookstore Hero Image">
+    <h1>Welcome to the Bookstore</h1>
+</div>
+
+<!-- Book Genres Section -->
+<section class="book-genres py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Explore Our Book Genres</h2>
+        <div class="row">
+            <!-- Fiction Genre Card -->
+            <div class="col-lg-3 col-md-6 col-12 mb-4">
+                <div class="card">
+                    <img src="https://publishdrive.com/media/posts/373/responsive/Scifi-2-lg.png" class="card-img-top" alt="Fiction">
+                    <div class="card-body">
+                        <h5 class="card-title">Fiction</h5>
+                        <p class="card-text">Explore the best of fiction, from literary masterpieces to contemporary hits.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Non-Fiction Genre Card -->
+            <div class="col-lg-3 col-md-6 col-12 mb-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/3771086/pexels-photo-3771086.jpeg" class="card-img-top" alt="Non-fiction">
+                    <div class="card-body">
+                        <h5 class="card-title">Non-fiction</h5>
+                        <p class="card-text">Dive into the world of real stories, biographies, history, and more.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Science Fiction Genre Card -->
+            <div class="col-lg-3 col-md-6 col-12 mb-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/4190977/pexels-photo-4190977.jpeg" class="card-img-top" alt="Science Fiction">
+                    <div class="card-body">
+                        <h5 class="card-title">Science Fiction</h5>
+                        <p class="card-text">Travel to distant worlds and futuristic realms through science fiction.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Mystery Genre Card -->
+            <div class="col-lg-3 col-md-6 col-12 mb-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/267503/pexels-photo-267503.jpeg" class="card-img-top" alt="Mystery">
+                    <div class="card-body">
+                        <h5 class="card-title">Mystery</h5>
+                        <p class="card-text">Unravel the unknown with gripping mystery novels and thrilling tales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <p>Contact Us:</p>
+    <p>
+        <a href="mailto:hayatzohaib443@gmail.com">Email: hayatzohaib443@gmail.com</a> | 
+        <a href="https://www.facebook.com/zohaibhayatkhattak" target="_blank">Facebook</a> | 
+        <a href="https://www.instagram.com/zohaibhayatkhattak" target="_blank">Instagram</a>
+    </p>
+    <p>&copy; 2024 Online Bookstore. All Rights Reserved.</p>
+</footer>
+
+<!-- Bootstrap JS & Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
